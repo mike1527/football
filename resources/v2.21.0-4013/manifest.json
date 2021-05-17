@@ -1,0 +1,22 @@
+{
+    "name": "FC Barcelona",
+    "short_name": "Barça",
+    "description": "The official website of FC Barcelona - news, fixtures, results and more",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "icons": [
+        {
+            "src": "./i/icons/fcb.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./i/icons/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
