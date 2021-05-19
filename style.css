@@ -89,7 +89,7 @@ body, html {
     box-shadow: 0 4.8px 6.4px 0 rgba(0, 0, 0, .25)
 }
 .navigation__logo-container {
-    /*background: #181733;*/
+    background: #181733;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -122,7 +122,7 @@ body, html {
 .navigation__logo:before {
     top: .8rem;
     right: -1px;
-    background-color: #1f1b20;
+    background-color: #fee703;
 }
 .navigation__logo:hover {
     /*background-color: #29283d*/
@@ -661,6 +661,12 @@ body, html {
     height: 100%;
     border-left: .1rem solid #29283d
 }
+.middle-navigation:hover .middle-navigation__item{
+    color: hsla(0, 0%, 100%, .6);
+}
+.middle-navigation:hover .middle-navigation__item .middle-navigation__item-link{
+    color: hsla(0, 0%, 100%, .6);
+}
 .middle-navigation__dropdown {
     position: absolute;
     visibility: hidden;
@@ -764,10 +770,16 @@ body, html {
     -ms-user-select: none;
     user-select: none;
     text-transform: uppercase;
-    transition: background-color .3s, color .3s
+    transition: background-color .2s ease, color ease .2s
+}
+.middle-navigation__item:hover{
+    color: #fff;
 }
 .middle-navigation__item:last-of-type {
     border-right: none
+}
+.middle-navigation__item.search-icon--open {
+    background-color: #29283d;
 }
 .middle-navigation__item .middle-navigation__search-icon, .middle-navigation__item .middle-navigation__sub-item a, .middle-navigation__item>a {
     display: inline-flex;
@@ -892,6 +904,10 @@ body, html {
     clip: rect(0 0 0 0);
     overflow: hidden
 }
+.middle-navigation__item.search-icon--open .search-icon {
+    opacity: .7;
+    transition: opacity .2s ease;
+}
 .middle-navigation__item .search-icon {
     width: 3.2rem;
     height: 3.2rem;
@@ -1007,7 +1023,7 @@ body, html {
     width: 100%;
     height: 4.8rem;
     display: flex;
-    background: linear-gradient(90deg, #cd122d 0, #154284);
+    background: linear-gradient(90deg, #fde602 0, #181733);
     transition: height .2s ease
 }
 .secondary-navigation__background {
