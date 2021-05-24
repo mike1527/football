@@ -30,14 +30,28 @@ document.getElementById('searchBar').onclick = function() {
 
 
 //START Бургер
-const iconMenu = document.querySelector('.menu__icon') //получаем иконку
-const menuBody = document.querySelector('.header__navigation') //получаем контент
+const iconMenu = document.querySelector('.menu__icon')
+const menuBody = document.querySelector('.header__navigation')
 
 if (iconMenu){ //Условие, если имеется такой класс
-    iconMenu.addEventListener("click", function (e) { //добавляем событие клика на иконку
-        iconMenu.classList.toggle('_active');   //добавляем класс иконке, чтобы можно было с ней взаимодействовать
-        menuBody.classList.toggle('_active');   //добавляем класс контенту
-        document.body.classList.toggle('_lock'); //Добавление класса body, чтобы при появлении контента нельзя было прокручивать основной контент
+    iconMenu.addEventListener("click", function (e) {
+        iconMenu.classList.toggle('_active');
+        menuBody.classList.toggle('_active');
+        document.body.classList.toggle('_lock');
     });
 }
 //END Бургер
+
+// --------START добавление класса при наведении на corousel img-------
+
+var container = document.querySelectorAll('.hero-tile');
+container.forEach(item => {
+    item.addEventListener('mouseenter', function(){
+        this.classList.add('is-active');
+    })
+    item.addEventListener('mouseleave', function(){
+        this.classList.remove('is-active');
+    })
+})
+
+// --------END добавление класса при наведении на corousel img-------
