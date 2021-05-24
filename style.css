@@ -2019,6 +2019,446 @@ body._lock{
         line-height: .9rem
     }
 }
+.footer__core {
+    position: relative
+}
+.footer__core:after, .footer__core:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -100vw;
+    width: 200vw;
+    height: 2.4rem;
+    z-index: 10
+}
+.footer__core:after {
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(24, 23, 51, 0), #181733)
+}
+
+.footer__core:before {
+    top: 0;
+    background: linear-gradient(0deg, rgba(24, 23, 51, 0), #181733)
+}
+.footer__constitutional-pattern {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%
+}
+.footer__constitutional-pattern svg {
+    width: 100%;
+    height: 100%;
+    opacity: .6
+}
+.footer__title {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 4rem 0
+}
+.footer__sponsors {
+    padding: 2.4rem 0
+}
+.footer-sponsors {
+    position: relative
+}
+.footer-sponsors, .footer-sponsors__container {
+    display: flex;
+    width: 100%
+}
+.footer-sponsors__link-wrapper {
+    position: absolute;
+    top: 0;
+    right: 1.6rem;
+    min-width: 13.2rem;
+    z-index: 20
+}
+.button {
+    min-width: 14.8rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 1.6rem;
+    line-height: 3.2rem;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #222;
+    box-shadow: 0 .2rem .6rem .1rem rgba(0, 0, 0, .2);
+    font-size: 1.2rem;
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    will-change: transform;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    cursor: pointer;
+    pointer-events: all;
+    transition: color .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
+    transition: color .2s ease, box-shadow .2s ease, transform .2s ease;
+    transition: color .2s ease, box-shadow .2s ease, transform .2s ease, -webkit-transform .2s ease
+}
+.button:after, .button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: .3rem;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+.footer-sponsors__main {
+    flex: 3
+}
+.footer-sponsors__main, .footer-sponsors__premium {
+    position: relative;
+    padding-top: .8rem
+}
+.footer-sponsors__title {
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    height: 1.4rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: #fdc52c
+}
+.footer-sponsors__sponsors-container {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    position: relative;
+    padding: 0 1.6rem
+}
+
+.footer-sponsors__sponsors-container:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: .2rem;
+    height: 100%;
+    background-color: #fdc52c
+}
+
+.footer-sponsors__sponsor {
+    height: 100%;
+    margin: 1.6rem .8rem
+}
+
+.footer-sponsors__sponsor a {
+    line-height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.footer-sponsors__sponsor a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: -1.6rem;
+    left: 51%;
+    right: 50%;
+    height: .4rem;
+    background-color: #fdc52c;
+    transition: left .2s ease, right .2s ease
+}
+
+.footer-sponsors__sponsor a:focus:after {
+    left: 0;
+    right: 0
+}
+.footer-sponsors__sponsors-container {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    position: relative;
+    padding: 0 1.6rem
+}
+.footer-sponsors .footer-sponsors__sponsors-container {
+    justify-content: space-around
+}
+.footer-sponsors__sponsors-container:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: .2rem;
+    height: 100%;
+    background-color: #fdc52c
+}
+.footer-sponsors__sponsor {
+    height: 100%;
+    margin: 1.6rem .8rem
+}
+.footer-sponsors .footer-sponsors__sponsor {
+    height: 8rem
+}
+.footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
+    width: 12%
+}
+.footer-sponsors__sponsor a {
+    line-height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+.footer-sponsors__sponsor svg {
+    max-width: 22rem;
+    max-height: 100%
+}
+.footer-sponsors .footer-sponsors__sponsor svg {
+    width: 100%;
+    height: auto
+}
+.footer-sponsors__sponsor a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: -1.6rem;
+    left: 51%;
+    right: 50%;
+    height: .4rem;
+    background-color: #fdc52c;
+    transition: left .2s ease, right .2s ease
+}
+.footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa, .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten {
+    width: 15%
+}
+.footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
+    width: 10%
+}
+.button:before {
+    background: rgb(254,231,3);
+    background: linear-gradient(90deg, rgba(254,231,3,1) 0%, rgba(24,23,51,1) 100%);
+}
+.button:after {
+    background: linear-gradient(90deg, #154284, #cd122d);
+    transition: opacity .2s ease
+}
+.button--primary:after {
+    background: #fee703
+}
+.button:hover {
+    background-color: transparent;
+    box-shadow: 0 .1rem .4rem 0 rgba(0, 0, 0, .5);
+    -webkit-transform: translateY(.1rem);
+    transform: translateY(.1rem)
+}
+.button:hover:after {
+    opacity: 0
+}
+.button:focus {
+    background-color: transparent;
+    box-shadow: 0 .1rem .4rem 0 rgba(0, 0, 0, .5);
+    -webkit-transform: translateY(.1rem);
+    transform: translateY(.1rem)
+}
+.button:focus:after {
+    opacity: 0
+}
+@media (max-width: 1000px){
+    .footer-sponsors__main {
+        min-height: 14rem
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
+        width: 16%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten {
+        width: 19%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
+        width: 13%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--assistencia-sanitaria, .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto {
+        width: 22%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto svg {
+        margin-top: 1%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa {
+        width: 18%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--stanley {
+        width: 22%
+    }
+    .footer-sponsors__premium {
+        min-height: 13rem
+    }
+}
+@media(max-width: 840px){
+    .footer__title {
+        font-size: 3.2rem;
+        padding: 5rem 0
+    }
+    .footer__sponsors {
+        position: relative
+    }
+    .footer__sponsors:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -.8rem;
+        left: -100vw;
+        width: 200vw;
+        height: 2.4rem;
+        z-index: 10;
+        background: linear-gradient(180deg, rgba(24, 23, 51, 0), #181733)
+    }
+    .footer-sponsors__container {
+        flex-direction: column
+    }
+    .footer-sponsors__main, .footer-sponsors__premium {
+        padding: 0 1.6rem
+    }
+    .footer-sponsors__main {
+        min-height: 14rem
+    }
+    .footer-sponsors__title {
+        width: 100%;
+        text-align: center;
+        line-height: .2rem;
+        height: auto
+    }
+    .footer-sponsors__title span {
+        padding: 0 .8rem;
+        position: relative
+    }
+    .footer-sponsors__title span:after, .footer-sponsors__title span:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        background: #fdc52c;
+        width: calc(50vw - 50% - 3.2rem);
+        height: .2rem
+    }
+    .footer-sponsors__title span:before {
+        left: calc(-50vw + 50% + 1.6rem)
+    }
+    .footer-sponsors__title span:after {
+        right: calc(-50vw + 50% + 1.6rem)
+    }
+    .footer-sponsors__sponsors-container {
+        margin: 0;
+        padding: 2.4rem 0
+    }
+    .footer-sponsors__link {
+        display: block;
+        width: 100%
+    }
+    .footer-sponsors__link-wrapper {
+        bottom: -2.4rem;
+        top: auto;
+        left: 50%;
+        width: calc(100% - 3.2rem);
+        text-align: center;
+        margin: 0 auto;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+    .footer-sponsors__sponsors-container:before {
+        content: none
+    }
+    .footer-sponsors__main--two-sections .footer-sponsors__sponsor {
+        height: 4rem
+    }
+    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--nike {
+        width: 17%
+    }
+    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--rakuten {
+        width: 18%
+    }
+    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--beko {
+        width: 14%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors--nike {
+        width: 22%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors--rakuten {
+        width: 23%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors--rakuten svg {
+        margin-top: -5%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors--beko {
+        width: 17%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors--beko svg {
+        margin-top: 7.5%
+    }
+    .footer-sponsors__premium {
+        min-height: 13rem
+    }
+    .footer-sponsors__premium--two-sections .footer-sponsors__sponsor {
+        height: 4rem
+    }
+}
+@media (max-width: 570px){
+    .footer-sponsors__premium--two-sections .footer-sponsors__sponsor--nike {
+        width: 17%
+    }
+    .footer-sponsors__main {
+        min-height: 14rem
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor {
+        height: 4rem
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
+        width: 20%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten, .footer-sponsors__main--one-section .footer-sponsors__sponsor--stanley {
+        width: 24%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
+        width: 16%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto {
+        width: 23%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--assistencia-sanitaria {
+        width: 25%
+    }
+    .footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa {
+        width: 23%
+    }
+    .footer-sponsors__premium {
+        min-height: 13rem
+    }
+    .footer-sponsors__premium--one-section .footer-sponsors__sponsor {
+        height: 4rem
+    }
+}
+@media (max-width: 510px){
+    .footer-sponsors__main .footer-sponsors__sponsors-container {
+        padding: 0
+    }
+    .footer-sponsors__main {
+        min-height: 9rem
+    }
+}
 /*-----------END FOOTER-------------*/
 
 
@@ -18916,57 +19356,13 @@ p a:focus {
     }
 }
 
-.button {
-    min-width: 14.8rem;
-    position: relative;
-    display: inline-block;
-    padding: 0 1.6rem;
-    line-height: 3.2rem;
-    border-radius: 3px;
-    border: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 .2rem .6rem .1rem rgba(0, 0, 0, .2);
-    font-size: 1.2rem;
-    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    will-change: transform;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    cursor: pointer;
-    pointer-events: all;
-    transition: color .2s ease, box-shadow .2s ease, -webkit-transform .2s ease;
-    transition: color .2s ease, box-shadow .2s ease, transform .2s ease;
-    transition: color .2s ease, box-shadow .2s ease, transform .2s ease, -webkit-transform .2s ease
-}
 
-.button:after, .button:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: .3rem;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
-}
 
-.button:before {
-    background: linear-gradient(270deg, #154284, #cd122d)
-}
 
-.button:after {
-    background: linear-gradient(90deg, #154284, #cd122d);
-    transition: opacity .2s ease
-}
+
+
+
+
 
 .button .icon {
     width: 1.1rem;
@@ -18980,29 +19376,11 @@ p a:focus {
 }
 
 @media (min-width:840px) {
-    .button:hover {
-        background-color: transparent;
-        box-shadow: 0 .1rem .4rem 0 rgba(0, 0, 0, .5);
-        -webkit-transform: translateY(.1rem);
-        transform: translateY(.1rem)
-    }
-    .button:hover:after {
-        opacity: 0
-    }
-    .button:focus {
-        background-color: transparent;
-        box-shadow: 0 .1rem .4rem 0 rgba(0, 0, 0, .5);
-        -webkit-transform: translateY(.1rem);
-        transform: translateY(.1rem)
-    }
-    .button:focus:after {
-        opacity: 0
-    }
+
+
 }
 
-.button--primary:after {
-    background: #cd122d
-}
+
 
 .button--secondary:after {
     background: #154284
@@ -41698,46 +42076,6 @@ p a:focus {
     }
 }
 
-
-
-.footer__constitutional-pattern {
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%
-}
-
-.footer__constitutional-pattern svg {
-    width: 100%;
-    height: 100%;
-    opacity: .6
-}
-
-.footer__core {
-    position: relative
-}
-
-.footer__core:after, .footer__core:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -100vw;
-    width: 200vw;
-    height: 2.4rem;
-    z-index: 10
-}
-
-.footer__core:after {
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(24, 23, 51, 0), #181733)
-}
-
-.footer__core:before {
-    top: 0;
-    background: linear-gradient(0deg, rgba(24, 23, 51, 0), #181733)
-}
-
 .footer__corporate {
     padding-top: 5.6rem
 }
@@ -41749,24 +42087,9 @@ p a:focus {
     height: auto
 }
 
-.footer__sponsors {
-    padding: 2.4rem 0
-}
 
-.footer__title {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding: 4rem 0
-}
+
+
 
 .footer--narrow {
     padding: 0 .8rem
@@ -41834,30 +42157,15 @@ p a:focus {
     .footer__crest.icon {
         width: calc(70% - 1.6rem)
     }
-    .footer__sponsors {
-        position: relative
-    }
-    .footer__sponsors:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -.8rem;
-        left: -100vw;
-        width: 200vw;
-        height: 2.4rem;
-        z-index: 10;
-        background: linear-gradient(180deg, rgba(24, 23, 51, 0), #181733)
-    }
+
+
     .footer__corporate {
         padding: 1.6rem 1.6rem 2.4rem
     }
     .footer:after {
         height: .8rem
     }
-    .footer__title {
-        font-size: 3.2rem;
-        padding: 5rem 0
-    }
+
 }
 
 @media (max-width:400px) {
@@ -42087,41 +42395,6 @@ p a:focus {
         grid-template-columns: repeat(2, calc(50% - 1.6rem))
     }
 }
-
-.footer-sponsors {
-    position: relative
-}
-
-.footer-sponsors, .footer-sponsors__container {
-    display: flex;
-    width: 100%
-}
-
-.footer-sponsors__link-wrapper {
-    position: absolute;
-    top: 0;
-    right: 1.6rem;
-    min-width: 13.2rem;
-    z-index: 20
-}
-
-.footer-sponsors .footer-sponsors__sponsor {
-    height: 8rem
-}
-
-.footer-sponsors .footer-sponsors__sponsor svg {
-    width: 100%;
-    height: auto
-}
-
-.footer-sponsors .footer-sponsors__sponsors-container {
-    justify-content: space-around
-}
-
-.footer-sponsors__main {
-    flex: 3
-}
-
 .footer-sponsors__main--two-sections .footer-sponsors__sponsor--nike {
     width: 22%
 }
@@ -42141,11 +42414,6 @@ p a:focus {
 .footer-sponsors__main--two-sections .footer-sponsors__sponsor--beko svg {
     margin-top: 7.5%
 }
-
-.footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
-    width: 12%
-}
-
 .footer-sponsors__main--one-section .footer-sponsors__sponsor--stanley {
     width: 16%
 }
@@ -42162,13 +42430,9 @@ p a:focus {
     width: 16%
 }
 
-.footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa, .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten {
-    width: 15%
-}
 
-.footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
-    width: 10%
-}
+
+
 
 .footer-sponsors__premium {
     flex: 4
@@ -42211,53 +42475,6 @@ p a:focus {
     width: 22%
 }
 
-.footer-sponsors__main, .footer-sponsors__premium {
-    position: relative;
-    padding-top: .8rem
-}
-
-.footer-sponsors__sponsors-container {
-    display: flex;
-    white-space: nowrap;
-    align-items: center;
-    position: relative;
-    padding: 0 1.6rem
-}
-
-.footer-sponsors__sponsors-container:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: .2rem;
-    height: 100%;
-    background-color: #fdc52c
-}
-
-.footer-sponsors__sponsor {
-    height: 100%;
-    margin: 1.6rem .8rem
-}
-
-.footer-sponsors__sponsor a {
-    line-height: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    position: relative
-}
-
-.footer-sponsors__sponsor a:after {
-    display: block;
-    position: absolute;
-    content: "";
-    bottom: -1.6rem;
-    left: 51%;
-    right: 50%;
-    height: .4rem;
-    background-color: #fdc52c;
-    transition: left .2s ease, right .2s ease
-}
 
 .footer-sponsors__sponsor a:focus:after {
     left: 0;
@@ -42271,22 +42488,9 @@ p a:focus {
     }
 }
 
-.footer-sponsors__sponsor svg {
-    max-width: 22rem;
-    max-height: 100%
-}
 
-.footer-sponsors__title {
-    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    height: 1.4rem;
-    margin-bottom: 1.1rem;
-    line-height: 1.4rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    color: #fdc52c
-}
+
+
 
 .footer--narrow .footer-sponsors__container {
     flex-direction: column
@@ -42346,175 +42550,9 @@ p a:focus {
 .footer--narrow .footer-sponsors__title span:before {
     left: calc(-50vw + 50% + 1.6rem)
 }
-
-.footer--narrow .footer-sponsors__title span:after {
-    right: calc(-50vw + 50% + 1.6rem)
-}
-
-@media (max-width:1025px) {
-    .footer-sponsors__main {
-        min-height: 14rem
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
-        width: 16%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten {
-        width: 19%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
-        width: 13%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--assistencia-sanitaria, .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto {
-        width: 22%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto svg {
-        margin-top: 1%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa {
-        width: 18%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--stanley {
-        width: 22%
-    }
-    .footer-sponsors__premium {
-        min-height: 13rem
-    }
-}
-
-@media (max-width:840px) {
-    .footer-sponsors__container {
-        flex-direction: column
-    }
-    .footer-sponsors__link {
-        display: block;
-        width: 100%
-    }
-    .footer-sponsors__link-wrapper {
-        bottom: -2.4rem;
-        top: auto;
-        left: 50%;
-        width: calc(100% - 3.2rem);
-        text-align: center;
-        margin: 0 auto;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
-    }
-    .footer-sponsors__main, .footer-sponsors__premium {
-        padding: 0 1.6rem
-    }
-    .footer-sponsors__sponsors-container {
-        margin: 0;
-        padding: 2.4rem 0
-    }
-    .footer-sponsors__sponsors-container:before {
-        content: none
-    }
-    .footer-sponsors__title {
-        width: 100%;
-        text-align: center;
-        line-height: .2rem;
-        height: auto
-    }
-    .footer-sponsors__title span {
-        padding: 0 .8rem;
-        position: relative
-    }
-    .footer-sponsors__title span:after, .footer-sponsors__title span:before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 50%;
-        background: #fdc52c;
-        width: calc(50vw - 50% - 3.2rem);
-        height: .2rem
-    }
-    .footer-sponsors__title span:before {
-        left: calc(-50vw + 50% + 1.6rem)
-    }
-    .footer-sponsors__title span:after {
-        right: calc(-50vw + 50% + 1.6rem)
-    }
-    .footer-sponsors__main {
-        min-height: 14rem
-    }
-    .footer-sponsors__main--two-sections .footer-sponsors__sponsor {
-        height: 4rem
-    }
-    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--nike {
-        width: 17%
-    }
-    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--rakuten {
-        width: 18%
-    }
-    .footer-sponsors__main--two-sections .footer-sponsors__sponsor--beko {
-        width: 14%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors--nike {
-        width: 22%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors--rakuten {
-        width: 23%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors--rakuten svg {
-        margin-top: -5%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors--beko {
-        width: 17%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors--beko svg {
-        margin-top: 7.5%
-    }
-    .footer-sponsors__premium {
-        min-height: 13rem
-    }
-    .footer-sponsors__premium--two-sections .footer-sponsors__sponsor {
-        height: 4rem
-    }
-    .footer-sponsors__premium--two-sections .footer-sponsors__sponsor--nike {
-        width: 17%
-    }
-}
-
-@media (max-width:640px) {
-    .footer-sponsors__main {
-        min-height: 14rem
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor {
-        height: 4rem
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--nike {
-        width: 20%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--rakuten, .footer-sponsors__main--one-section .footer-sponsors__sponsor--stanley {
-        width: 24%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--beko {
-        width: 16%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--serveto {
-        width: 23%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--assistencia-sanitaria {
-        width: 25%
-    }
-    .footer-sponsors__main--one-section .footer-sponsors__sponsor--lassa {
-        width: 23%
-    }
-    .footer-sponsors__premium {
-        min-height: 13rem
-    }
-    .footer-sponsors__premium--one-section .footer-sponsors__sponsor {
-        height: 4rem
-    }
-}
-
 @media (max-width:470px) {
-    .footer-sponsors__main {
-        min-height: 9rem
-    }
-    .footer-sponsors__main .footer-sponsors__sponsors-container {
-        padding: 0
-    }
+
+
     .footer-sponsors__premium {
         min-height: 10rem
     }
@@ -42534,21 +42572,6 @@ p a:focus {
         background-size: 328px 88px
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-trophies__trophy-descriptor--champions-league .footer-trophies__trophy-image {
     width: 3.3rem
 }
