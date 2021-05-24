@@ -2459,6 +2459,130 @@ body._lock{
         min-height: 9rem
     }
 }
+.social-accounts {
+    position: relative;
+    text-align: center
+}
+.social-accounts__title {
+    margin: 3.2rem 0 0;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400
+}
+.social-accounts__list {
+    display: flex;
+    max-width: 100rem;
+    margin: 1.6rem auto 2.4rem;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.social-accounts__account-container {
+    display: block;
+    margin: .4rem;
+    max-width: 15.8rem;
+    min-width: 10.4rem;
+    height: 10.4rem;
+    flex: 1 1 13%
+}
+.social-accounts__account {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 1.2rem 1.2rem 1.3rem;
+    text-decoration: none;
+    z-index: 10
+}
+.social-accounts__account:before {
+    content: "";
+    position: absolute;
+    top: -.2rem;
+    left: -.2rem;
+    right: -.2rem;
+    bottom: -.2rem;
+    background: transparent;
+    transition: background .3s
+}
+.social-accounts__content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    z-index: 10
+}
+.social-accounts__icon {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: #fff
+}
+.social-accounts__content-name {
+    margin-bottom: .4rem;
+    font-size: 1rem;
+    line-height: 1.2rem
+}
+
+.social-accounts__content-handle, .social-accounts__content-name {
+    color: #fff;
+    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 400
+}
+.social-accounts__content-handle {
+    font-size: 1.2rem;
+    line-height: 1.4rem
+}
+.social-accounts__account:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.social-accounts__account--viber:after {
+    background: #7360f2
+}
+
+.social-accounts__account--tiktok:after {
+    background: #000
+}
+
+.social-accounts__account--facebook:after {
+    background: #3b5998
+}
+
+.social-accounts__account--twitter:after {
+    background: #55acee
+}
+
+.social-accounts__account--instagram:after {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d)
+}
+
+.social-accounts__account--youtube:after {
+    background: #b00
+}
+
+.social-accounts__account--dugout {
+    background: #efefef
+}
+
+.social-accounts__account--dugout .social-accounts__icon {
+    fill: #727272
+}
+
+.social-accounts__account--dugout .social-accounts__content-handle, .social-accounts__account--dugout .social-accounts__content-name {
+    color: #191635
+}
+.social-accounts__list:after {
+    content: "";
+    display: block;
+    clear: left
+}
 /*-----------END FOOTER-------------*/
 
 
@@ -55340,10 +55464,7 @@ html {
     }
 }
 
-.social-accounts {
-    position: relative;
-    text-align: center
-}
+
 
 .social-accounts--has-button:before {
     content: "";
@@ -55354,69 +55475,6 @@ html {
     height: .1rem;
     background: hsla(0, 0%, 100%, .2)
 }
-
-.social-accounts__title {
-    margin: 3.2rem 0 0;
-    color: #fff;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400
-}
-
-.social-accounts__list {
-    display: flex;
-    max-width: 100rem;
-    margin: 1.6rem auto 2.4rem;
-    text-align: left;
-    flex-wrap: wrap;
-    justify-content: center
-}
-
-.social-accounts__list:after {
-    content: "";
-    display: block;
-    clear: left
-}
-
-.social-accounts__account-container {
-    display: block;
-    margin: .4rem;
-    max-width: 15.8rem;
-    min-width: 10.4rem;
-    height: 10.4rem;
-    flex: 1 1 13%
-}
-
-.social-accounts__account {
-    position: relative;
-    display: block;
-    height: 100%;
-    padding: 1.2rem 1.2rem 1.3rem;
-    text-decoration: none;
-    z-index: 10
-}
-
-.social-accounts__account:before {
-    content: "";
-    position: absolute;
-    top: -.2rem;
-    left: -.2rem;
-    right: -.2rem;
-    bottom: -.2rem;
-    background: transparent;
-    transition: background .3s
-}
-
-.social-accounts__account:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
-}
-
 .social-accounts__account:focus:before {
     background: #fff;
     z-index: 0
@@ -55428,77 +55486,6 @@ html {
         z-index: 0
     }
 }
-
-.social-accounts__account--viber:after {
-    background: #7360f2
-}
-
-.social-accounts__account--tiktok:after {
-    background: #000
-}
-
-.social-accounts__account--facebook:after {
-    background: #3b5998
-}
-
-.social-accounts__account--twitter:after {
-    background: #55acee
-}
-
-.social-accounts__account--instagram:after {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d)
-}
-
-.social-accounts__account--youtube:after {
-    background: #b00
-}
-
-.social-accounts__account--dugout {
-    background: #efefef
-}
-
-.social-accounts__account--dugout .social-accounts__icon {
-    fill: #727272
-}
-
-.social-accounts__account--dugout .social-accounts__content-handle, .social-accounts__account--dugout .social-accounts__content-name {
-    color: #191635
-}
-
-.social-accounts__content {
-    position: relative;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    z-index: 10
-}
-
-.social-accounts__icon {
-    display: block;
-    width: 2.8rem;
-    height: 2.8rem;
-    fill: #fff
-}
-
-.social-accounts__content-name {
-    margin-bottom: .4rem;
-    font-size: 1rem;
-    line-height: 1.2rem
-}
-
-.social-accounts__content-handle, .social-accounts__content-name {
-    color: #fff;
-    font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 400
-}
-
-.social-accounts__content-handle {
-    font-size: 1.2rem;
-    line-height: 1.4rem
-}
-
 .social-accounts__link-container {
     position: relative;
     display: inline-block;
