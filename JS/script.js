@@ -44,7 +44,7 @@ if (iconMenu){ //Условие, если имеется такой класс
 
 // --------START добавление класса при наведении на corousel img-------
 
-var container = document.querySelectorAll('.hero-tile');
+let container = document.querySelectorAll('.hero-tile');
 container.forEach(item => {
     item.addEventListener('mouseenter', function(){
         this.classList.add('is-active');
@@ -55,3 +55,34 @@ container.forEach(item => {
 })
 
 // --------END добавление класса при наведении на corousel img-------
+
+// --------START PLAYERS SLIDER-------
+
+// const swiper = new Swiper('.swiper-container', {
+//     speed: 400,
+//     spaceBetween: 1,
+//     // direction: 'vertical',
+//     loop: true,
+//
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+//
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+// });
+
+new Swiper ('.swiper-container', {
+    navigation: {
+        nextEl: '.player-slider__slide-arrow--next',
+        prevEl: '.player-slider__slide-arrow--prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+});
+
+// --------END PLAYERS SLIDER-------
