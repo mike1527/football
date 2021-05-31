@@ -2732,6 +2732,7 @@ body._lock{
 }
 .player-slider__list-container {
     margin: 0 auto;
+    overflow: unset;
     position: relative;
     z-index: 10
 }

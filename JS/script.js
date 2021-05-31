@@ -75,6 +75,7 @@ container.forEach(item => {
 // });
 
 new Swiper ('.swiper-container', {
+    loop: true,
     navigation: {
         nextEl: '.player-slider__slide-arrow--next',
         prevEl: '.player-slider__slide-arrow--prev'
